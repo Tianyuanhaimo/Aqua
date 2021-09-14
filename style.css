@@ -1,0 +1,327 @@
+body {
+    min-height: 1000px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#main-menu {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 50px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100000;
+}
+.scroll {
+    padding: 10px 100px;
+    background-color: black;
+}
+#main-menu .tab {
+    position: relative;
+    font: 2em sans-serif;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: rgb(24, 121, 231);
+    transition: 1s;
+}
+
+#main-menu ul {
+    background-color: #ff7733;
+	display: flex;
+    position: relative;
+    width: 600px;
+	flex-direction: row;
+	list-style: none;
+	justify-content: space-around;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 5px 10px ;
+}
+#main-menu ul li {
+    position: relative;
+    list-style-type: none;
+}
+
+#main-menu ul li a {
+    position: relative;
+	text-decoration: none;
+    font-weight: 700px;
+	color: black;
+    transition: all 2s ease;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+#main-menu ul li a:hover {
+	background-color: white;
+	color: #000000;
+}
+
+#main-menu ul li a:active {
+	color: #000000;
+}
+
+.pages {
+    width: 60%;
+    height: 600px;
+    margin: 80px auto;
+    background-color: aqua;
+    border-radius: 20px;
+}
+
+.page__header{
+   width: 100%;
+   height: 50%;
+   position: relative;
+   border-radius: 20px;
+   background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),url(./image/background.png);
+   background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.homePicture {
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+	background-size: cover;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+
+.homePicture:hover {
+	transform: translate(0, -30px);
+	transition: all 1s ease;
+    box-shadow: 0 10px 20px black;
+}
+
+.aqua-text {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    text-align: center;
+}
+
+.aqua-text h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    color: #0c4fb3;
+}
+
+.aqua-text p {
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.aqua-text ul {
+    display: flex;
+	flex-direction: row;
+	list-style: none;
+    justify-content: center;
+}
+
+.contact-way {
+    width: 50px;
+    height: 50px;
+}
+
+.page-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about {
+    
+    width: 40%;
+    height: 60%;
+    text-align: center;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.about h3 {
+    font-family: 'Noto Serif', serif;
+    font-style:oblique;
+    font-size: 25px;
+}
+
+.aqua-table {
+    width: 40%;
+    height: 60%;
+    text-align: center;
+    margin-top: 60px;
+    overflow: hidden;
+}
+
+.aqua-table th {
+    font-family: 'Noto Serif', serif;
+    font-style:oblique;
+    font-size: 20px;
+}
+
+.skillPages {
+    width: 60%;
+    height: 600px;
+    margin: 0 auto;
+    background-color: aqua;
+    border-radius: 20px;
+    position: relative;
+}
+
+.skillTitle{
+    width: 100%;
+    height: 30%;
+    position: relative;
+    border-radius: 20px;
+    background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),url(./image/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.skillTitle span {
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    color: #0c4fb3;
+}
+
+.skill ul {
+    display: flex;
+	flex-direction: row;
+	list-style: none;
+    justify-content: space-around;
+    text-align: center;
+    overflow: hidden;
+}
+
+.skill-picture {
+    width: 250px;
+    height: 250px;
+}
+
+.skill ul li p {
+    font-family: 'Noto Serif', serif;
+    font-style:oblique;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.p-window1 {
+	position: fixed;
+	top: 20%;
+	left: 20%;
+	background-color:transparent;
+	transition: all 0.5s ease;
+	visibility: hidden;
+	opacity: 1;
+    text-align: center;
+}
+
+.p-window1 .p-window2 {
+	background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),url(./image/scroll.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+	width: 700px;
+	height: 500px;
+	margin: 5em;
+	padding-top: 5em;
+	box-shadow: rgba(0,0,0,0.25) 5px 5px 10px;
+	position: relative;
+	border: solid #eb2011 3px;
+	border-radius: 5px;
+}
+
+.n-window1 {
+	position: fixed;
+	top: 20%;
+	left: 20%;
+	background-color:transparent;
+	transition: all 0.5s ease;
+	visibility: hidden;
+	opacity: 1;
+    text-align: center;
+}
+
+.n-window1 .n-window2 {
+	background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),url(./image/scroll.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+	width: 700px;
+	height: 500px;
+	margin: 5em;
+	padding-top: 5em;
+	box-shadow: rgba(0,0,0,0.25) 5px 5px 10px;
+	position: relative;
+	border: solid #eb2011 3px;
+	border-radius: 5px;
+}
+
+.g-window1 {
+	position: fixed;
+	top: 20%;
+	left: 20%;
+	background-color:transparent;
+	transition: all 0.5s ease;
+	visibility: hidden;
+	opacity: 1;
+    text-align: center;
+}
+
+.g-window1 .g-window2 {
+	background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),url(./image/scroll.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+	width: 700px;
+	height: 500px;
+	margin: 5em;
+	padding-top: 5em;
+	box-shadow: rgba(0,0,0,0.25) 5px 5px 10px;
+	position: relative;
+	border: solid #eb2011 3px;
+	border-radius: 5px;
+}
+
+.close-button a:before {
+	content: "\2716"; /* Unicode for an 'x' icon */
+	padding-right: 5px;
+	
+}
+
+.close-button a {
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 10px;
+	text-transform: uppercase;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 1em;
+}
+
+body.show-p-window1  .p-window1 {
+	visibility: visible;
+	opacity: 1;
+}
+
+body.show-n-window1  .n-window1 {
+	visibility: visible;
+	opacity: 1;
+}
+
+body.show-g-window1  .g-window1 {
+	visibility: visible;
+	opacity: 1;
+}
+
+
